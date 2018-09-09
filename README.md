@@ -2,7 +2,7 @@
 
 This is official flowq.io scenario list. 
 
- *  [scenario devlop guild](https://github.com/flowqio/scenario/guide.md?raw=true)
+ *  [scenario devlop guide](https://github.com/flowqio/scenario/blob/master/guide.md)
 
 
 ## Git
