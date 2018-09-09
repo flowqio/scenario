@@ -7,7 +7,7 @@ This is official flowq.io scenario list.
 
 ## Git
    
-   [git-startup](https://github.com/flowqio/scenario/git-startup)
+   [git-startup](https://github.com/flowqio/scenario/tree/master/git-startup)
    
 
 ## Docker
