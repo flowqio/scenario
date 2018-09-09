@@ -1,0 +1,13 @@
+version: '2'
+services:
+  git_{OID}:
+    image: "flowq/git"
+    tty: true
+    networks:
+     - {OID}
+  
+
+
+networks:
+ {OID}:
+    driver: overlay
