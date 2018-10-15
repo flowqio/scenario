@@ -11,6 +11,8 @@
 + 包括了以下内容
 
     + git init 初始化代码仓库
+    + git add 添加文件
+    + git commit -m 提交
     + 配置 .gitignore  忽略
 
 ### Git 是什么?
