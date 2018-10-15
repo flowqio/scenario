@@ -12,7 +12,8 @@
 
     + git init 初始化代码仓库
     + git add 添加文件
-    + git commit -m 提交
+    + git commit 提交
+    + git log 查看日志
     + 配置 .gitignore  忽略
 
 ### Git 是什么?
