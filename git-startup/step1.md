@@ -16,7 +16,7 @@
 
 `git init `{{execute}}
 
-系统会显示初成功始化仓库
+系统会显示已经成功始化仓库
 
 ```bash
 Initialized empty Git repository in /root/myproject/.git/
