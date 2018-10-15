@@ -8,7 +8,7 @@
 
 如果已经安装了, 该命令会返回git所有的参数
 
-1.2 创建一个仓库目录(myproject)
+1.2 初始化一个代码仓库目录(myproject)
 
 `mkdir myproject `{{execute}}
 
