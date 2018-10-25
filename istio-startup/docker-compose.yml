@@ -1,0 +1,17 @@
+version: '2'
+services:
+  k8s_{OID}:
+    image: "quay.io/aspenmesh/minikube-dind"
+    mem_limit: '2024m'
+    tty: true
+    privileged: true  
+    networks:
+     - {OID}
+    volumes:
+     - share:/data/share:ro
+     - {OID}:/data/work
+
+
+networks:
+ {OID}:
+    driver: overlay
