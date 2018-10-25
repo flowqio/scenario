@@ -1,0 +1,15 @@
+version: '2'
+services:
+  dockerdind_{OID}:
+    image: "flowq/dind"
+    tty: true
+    privileged: true
+    networks:
+     - {OID}
+    volumes:
+     - share:/data/share:ro
+     - {OID}:/data/work
+
+networks:
+ {OID}:
+    driver: overlay
