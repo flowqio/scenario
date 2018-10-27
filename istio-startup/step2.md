@@ -6,6 +6,13 @@
 
 `kubectl apply -f samples/bookinfo/platform/kube/bookinfo.yaml`{{execute}}
 
+查看booinfo pods 运行状态
+
+`kubectl get po`
 
 
-2.2 (待续)
+
+2.2 使用istioctl 定义网关
+
+`istioctl create -f samples/bookinfo/networking/bookinfo.gateway.yaml`
+
