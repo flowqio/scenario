@@ -1,0 +1,41 @@
+version: '2'
+services:
+  master_{OID}:
+    image: "flowq/k8s:fixed"
+    mem_limit: '2048m'
+    tty: true
+    hostname: "master"
+    privileged: true
+    networks:
+     - {OID}
+    volumes:
+     - share:/data/share:ro
+     - {OID}:/data/work
+
+  node1_{OID}:
+    image: "flowq/k8s:fixed"
+    mem_limit: '2048m'
+    tty: true
+    hostname: "node1"
+    privileged: true
+    networks:
+     - {OID}
+    volumes:
+     - share:/data/share:ro
+     - {OID}:/data/work
+
+  node2_{OID}:
+    image: "flowq/k8s:fixed"
+    mem_limit: '2048m'
+    tty: true
+    hostname: "node2"
+    privileged: true
+    networks:
+     - {OID}
+    volumes:
+     - share:/data/share:ro
+     - {OID}:/data/work
+
+networks:
+ {OID}:
+    driver: overlay

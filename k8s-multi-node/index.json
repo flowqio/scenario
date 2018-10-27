@@ -1,0 +1,28 @@
+{
+    "title": "Create kubernetes multiple node cluster ",
+    "comments": "This secenario is about how to use kubeadm create k8s multple node cluster ",
+    "url": "k8s-multiple-node",
+    "created": "2018-05-14 16:26:06",
+    "intro":{
+            "title": "intro",
+            "file": "intro.md"
+            },
+    "steps": [
+        {
+            "title": "This is step1",
+            "file": "step1.md"
+        },
+        {
+            "title": "This is step2",
+            "file": "step2.md"
+        }
+        {
+            "title": "This is step3",
+            "file": "step3.md"
+        }
+    ],
+    "backend": {
+        "env": ["env-init.sh"],
+        "created": "flowq/k8s:fixed"
+    }
+}
