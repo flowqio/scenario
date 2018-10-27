@@ -16,7 +16,14 @@
 
 执行kubeadm init,该命令需要花费一定时间在后台远程下载系统所需要的image 
 
-`kubeadm init --apiserver-advertise-address $(hostname -i) ` {{execute}}
+执行下面的命令:
+
+ ```bash
+
+   kubeadm init --apiserver-advertise-address $(hostname -i)
+
+ ```
+
 
 需要注意init结束后输出的kubeadm join **信息, 后面添加工作节点时需要使用
 
@@ -32,7 +39,13 @@ kubeadm join 10.0.0.5:6443 --token yw2jb0.7rzg82yadmh5pvjw --discovery-token-ca-
 
 kubernetes可以使用多种cni网络,在这里我们使用的是weave
 
-`kubectl apply -n kube-system -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl version | base64 |tr -d '\n')"` {{execute}}
+执行下面的命令:
+
+```bash
+
+  kubectl apply -n kube-system -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl version | base64 |tr -d '\n')"
+
+```
 
 
 
