@@ -6,7 +6,17 @@
 
 请把step1的 kubeadm join **信息复制到终端
 
-`kubeadm join <master ip:port> --token <自动生成的token> --discovery-token-ca-cert-hash sha256:<ca证书的sha256 base64编码>`
+```bash
+#kubeadm join <master ip:port> --token <自动生成的token> --discovery-token-ca-cert-hash sha256:<ca证书的sha256 base64编码>
+#新方法
+/data/work/join.sh
+```
+
+
+
+`/data/work/join.sh`{{execute}}
+
+
 
 正常情况下稍后工作节点node1就会加入到集群
 

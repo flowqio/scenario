@@ -20,22 +20,19 @@
 
  ```bash
 
-   kubeadm init --apiserver-advertise-address $(hostname -i)
-
+   #旧版本 kubeadm init --apiserver-advertise-address $(hostname -i)
+   #新版本
+   cp /data/share/k8s/kubeadm.sh . && chmod 775 ./kubeadm.sh
+   #(如果/data/share 目录为空的话请稍后再试或者联系管理员steven@flowq.io)
  ```
 
+`cp /data/share/k8s/kubeadm.sh . && chmod 775 ./kubeadm.sh`{{execute}}
 
-需要注意init结束后输出的kubeadm join **信息, 后面添加工作节点时需要使用
-
-kubeadm join <master ip:port> --token <自动生成的token> --discovery-token-ca-cert-hash sha256:<ca证书的sha256 base64编码>
-
-例如
-
-kubeadm join 10.0.0.5:6443 --token yw2jb0.7rzg82yadmh5pvjw --discovery-token-ca-cert-hash sha256:cbedccbacd05b6da9c93eae180b5a3bbe8ef3abc20996796bdf9ef26656178bb
+新的脚本kubeadm.sh会创建/data/work/join.sh 直接切换到node1,node2执行即可.
 
 
 
-1.2 为kubernetes 配置网络
+1.2 为kubernetes 配置网络(请省略1.2 直接到第step2 添加节点)
 
 kubernetes可以使用多种cni网络,在这里我们使用的是weave
 
@@ -43,7 +40,7 @@ kubernetes可以使用多种cni网络,在这里我们使用的是weave
 
 ```bash
 
-  kubectl apply -n kube-system -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl version | base64 |tr -d '\n')"
+  kubectl apply -n kube-system -f /data/share/k8s/weave/net.yaml
 
 ```
 
