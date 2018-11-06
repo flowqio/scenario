@@ -8,7 +8,7 @@
 
 ​    
 
-1.1 首先选择master  , 初始化kubeadm
+1.1 首先选择master  , 初始化kubeadm,请不要使用kubeadm init执行
 
 `hostname`{{execute}}
 
@@ -16,15 +16,19 @@
 
 执行kubeadm init,该命令需要花费一定时间在后台远程下载系统所需要的image 
 
-执行下面的命令:
+命令说明:
 
  ```bash
 
-   #旧版本 kubeadm init --apiserver-advertise-address $(hostname -i)
-   #新版本
-   cp /data/share/k8s/kubeadm.sh . && chmod 775 ./kubeadm.sh
-   #(如果/data/share 目录为空的话请稍后再试或者联系管理员steven@flowq.io)
+   
+   #新版本,如果发现/data/share 目录为空的话请稍后再试或者联系管理员steven@flowq.io)
+   cp /data/share/k8s/kubeadm.sh . 
+   chmod 775 ./kubeadm.sh
+   ./kubeadm.sh
+   
  ```
+
+请执行一下命令
 
 `cp /data/share/k8s/kubeadm.sh `{{execute}}
 
@@ -36,11 +40,11 @@
 
 
 
-1.2 为kubernetes 配置网络(请省略1.2 直接到第step2 添加节点)
+1.2 ~~为kubernetes 配置网络(请省略1.2 直接到第step2 添加节点)~~
 
-kubernetes可以使用多种cni网络,在这里我们使用的是weave
+~~kubernetes可以使用多种cni网络,在这里我们使用的是weave~~
 
-执行下面的命令:
+~~执行下面的命令:~~
 
 ```bash
 
