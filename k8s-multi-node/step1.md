@@ -44,13 +44,7 @@
 
 ~~kubernetes可以使用多种cni网络,在这里我们使用的是weave~~
 
-~~执行下面的命令:~~
-
-```bash
-
-  kubectl apply -n kube-system -f /data/share/k8s/weave/net.yaml
-
-```
+~~执行下面的命令: kubectl apply -n kube-system -f /data/share/k8s/weave/net.yaml~~
 
 
 
