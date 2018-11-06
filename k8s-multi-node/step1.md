@@ -26,7 +26,11 @@
    #(如果/data/share 目录为空的话请稍后再试或者联系管理员steven@flowq.io)
  ```
 
-`cp /data/share/k8s/kubeadm.sh . && chmod 775 ./kubeadm.sh`{{execute}}
+`cp /data/share/k8s/kubeadm.sh `{{execute}}
+
+`chmod 775 ./kubeadm.sh`{{execute}}
+
+`./kubeadm.sh`{{execute}}
 
 新的脚本kubeadm.sh会创建/data/work/join.sh 直接切换到node1,node2执行即可.
 
