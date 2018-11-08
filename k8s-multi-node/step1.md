@@ -30,7 +30,7 @@
 
 请执行一下命令
 
-`cp /data/share/k8s/kubeadm.sh `{{execute}}
+`cp /data/share/k8s/kubeadm.sh  .`{{execute}}
 
 `chmod 775 ./kubeadm.sh`{{execute}}
 
