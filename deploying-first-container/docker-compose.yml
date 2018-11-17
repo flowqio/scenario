@@ -4,6 +4,7 @@ services:
     image: "flowq/dind"
     tty: true
     privileged: true
+    hostname:  "cloud_node01"
     networks:
      - {OID}
     volumes:

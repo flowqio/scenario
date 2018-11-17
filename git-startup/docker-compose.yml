@@ -6,6 +6,7 @@ services:
     cpu_shares: 0.5
     cpu_rt_period:  '500000'
     mem_limit: '64m'
+    hostname: "git-lab"
     networks:
      - {OID}
     volumes:

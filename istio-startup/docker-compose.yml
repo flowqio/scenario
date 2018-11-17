@@ -3,6 +3,7 @@ services:
   k8s_{OID}:
     image: "quay.io/aspenmesh/minikube-dind"
     mem_limit: '2024m'
+    hostname: 'minikube'
     tty: true
     privileged: true  
     networks:
