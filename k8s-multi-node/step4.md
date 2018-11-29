@@ -6,7 +6,7 @@
 sh /data/share/k8s/showToken.sh
 ```
 
-`sh /data/share/k8s/showToke.sh`{{execute}}
+`sh /data/share/k8s/showToken.sh`{{execute}}
 
 4.3 在master节点启动kubectl proxy
 
