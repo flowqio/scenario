@@ -16,7 +16,7 @@ sh /data/share/k8s/startProxy.sh
 
 
 
-`sh /data/share/k8s/startProxy.sh` {{execute}}
+`sh /data/share/k8s/startProxy.sh`{{execute}}
 
 
 
@@ -27,5 +27,4 @@ sh /data/share/k8s/startProxy.sh
 #http://01d43df4f5ef558d-8001-env1.env.flowq.io/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/
 ```
 
-`sh /data/share/k8s/showToken.sh` {{execute}}
-
+`sh /data/share/k8s/showToken.sh`{{execute}} 
