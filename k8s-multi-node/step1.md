@@ -15,8 +15,8 @@
  ```bash
 
    
-   #新版本,如果发现/data/share 目录为空的话请稍后再试或者联系管理员steven@flowq.io)
-   bash /data/share/k8s/kubeadm.sh  
+   #如果发现/data/share 目录为空的话请稍后再试或者联系管理员steven@flowq.io)
+   
    
  ```
 

@@ -4,7 +4,7 @@
 
 3.1 在master节点，使用kubectl部署
 
-`kubectl apply -f https://raw.githubusercontent.com/kubernetes/website/master/content/en/examples/application/nginx-app.yaml`{{execute }}
+`kubectl apply -f https://raw.githubusercontent.com/kubernetes/website/master/content/en/examples/application/nginx-app.yaml`{{execute}}
 
 查看K8S部署情况
 
