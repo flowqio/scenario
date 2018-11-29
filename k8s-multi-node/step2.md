@@ -8,7 +8,6 @@
 
 ```bash
 #执行/data/work/join.sh,将node加入集群
-/data/work/join.sh
 ```
 
 
