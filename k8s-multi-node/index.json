@@ -19,6 +19,10 @@
         {
             "title": "This is step3",
             "file": "step3.md"
+        },
+        {
+            "title": "This is step4",
+            "file": "step4.md"
         }
     ],
     "backend": {
