@@ -8,13 +8,7 @@
 
 ​    
 
-1.1 首先选择master  , 初始化kubeadm,请不要使用kubeadm init执行
-
-`hostname`{{execute}}
-
-如果是master则继续，如果是node1,node2请切换主机
-
-执行kubeadm init,该命令需要花费一定时间在后台远程下载系统所需要的image 
+1.1 首先选择master  , 初始化kubeadm, *请不要使用kubeadm init执行
 
 命令说明:
 
@@ -26,12 +20,13 @@
    
  ```
 
-请执行一下命令
+请执行集群创建命令:
 
 `bash /data/share/k8s/kubeadm.sh  `{{execute}}
 
+执行后需要花费一定时间在后台远程下载系统所需要的image ,
 
-新的脚本kubeadm.sh会创建/data/work/join.sh 直接切换到node1,node2执行即可.
+稍后会自动创建/data/work/join.sh, 直接切换到node1,node2执行即可.
 
 
 
