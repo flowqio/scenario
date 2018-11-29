@@ -7,8 +7,7 @@
 请把step1的 kubeadm join **信息复制到终端
 
 ```bash
-#kubeadm join <master ip:port> --token <自动生成的token> --discovery-token-ca-cert-hash sha256:<ca证书的sha256 base64编码>
-#新方法
+#执行/data/work/join.sh,将node加入集群
 /data/work/join.sh
 ```
 
@@ -24,7 +23,7 @@
 
 2.2 返回master 查看节点、服务状态
 
-`kubectl get pods `{{execute}}
+`kubectl get nodes `{{execute}}
 
 `kubectl get svc`{{execute}}
 
