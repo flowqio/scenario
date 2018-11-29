@@ -1,22 +1,14 @@
 ## Step4  使用Dashboard 
 
-4.1 使用kubectl创建pod
+4.1 在master节点查看dashbaord token
 
 ```ba
-kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/master/src/deploy/recommended/kubernetes-dashboard.yaml
+sh /data/share/k8s/showToken.sh
 ```
 
 
 
-4.2 创建dashboard所需要的角色
-
-```bash
-kubectl apply -f /data/share/k8s/dashboard-admin.yaml
-```
-
-
-
-4.3 启动kubectl proxy
+4.3 在master节点启动kubectl proxy
 
 ```bas
 sh /data/share/k8s/startProxy.sh
@@ -24,14 +16,15 @@ sh /data/share/k8s/startProxy.sh
 
 
 
-`sh /data/share/k8s/startProxy.sh`{{execute}}
+`sh /data/share/k8s/startProxy.sh` {{execute}}
 
 
 
-4.4 查看Token
+4.4 通过URL  http://<id>-8001-<env id>.env.flowq.io/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/进行访问
 
 ```bash
-sh /data/share/k8s/showToken.sh
+#example : 
+#http://01d43df4f5ef558d-8001-env1.env.flowq.io/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/
 ```
 
 `sh /data/share/k8s/showToken.sh` {{execute}}
